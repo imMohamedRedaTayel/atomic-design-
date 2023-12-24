@@ -1,0 +1,51 @@
+@import '../../../styles/var.scss';
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($main,0.2);
+    z-index: 12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.3s;
+    animation: opacity 0.3s ease;
+    animation-fill-mode: forwards;
+}
+@keyframes opacity {
+    from {opacity: 0;}
+    from {opacity: 1 !important;}
+}
+.sub {
+    font-weight: 400;
+    width: 50%;
+    margin:0 auto;
+    text-align: center;
+    line-height: 40px;
+}
+
+.loading {
+    background: $main_light;
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 180px;
+        animation: logo 2s linear infinite;
+    }
+}
+
+@keyframes logo {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+
+}

@@ -1,0 +1,56 @@
+@import '../../../styles/var.scss';
+
+.sideBar {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background: $main;
+    transition: all 0.3s ease-in-out;
+    box-shadow:0px 1px 20px 5px $lightShadowColor ;
+    padding:1rem;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+
+.logoView {
+    text-align: center;
+}
+
+.collapse {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    svg {
+        color: $light;
+        transition: 0.3s;
+    }
+}
+
+.open {
+    .icon {
+        
+        svg{
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.collapseLinks {
+    margin-left: 1.6rem;
+    padding-left: 0.9rem;
+    position: relative;
+    margin-top: 0.6rem;
+    user-select: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .sideBar {
+        left: -100%;
+    }
+}

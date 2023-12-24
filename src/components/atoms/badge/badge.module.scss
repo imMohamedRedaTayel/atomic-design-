@@ -1,0 +1,25 @@
+@import '../../../styles/var.scss';
+
+.badge {
+    font-weight: 400;    
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 15px;
+    text-transform: capitalize;
+}
+.suceess {
+    background-color: $lightSuccess;
+    color: $success;
+}
+.danger {
+    background-color: $lightDanger;
+    color: $danger;
+}
+.primary {
+    background-color: $main_light;
+    color: $main;
+}
+.alert {
+    background-color: $lightYellow;
+    color: $yellow;
+}

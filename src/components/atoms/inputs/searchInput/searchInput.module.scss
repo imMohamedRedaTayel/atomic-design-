@@ -1,0 +1,30 @@
+@import '../../../../styles/var.scss';
+
+.input {
+    background-color: $main_light;
+    position: relative;
+    border-radius: 50px;
+    
+    svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 1rem;
+        color:$placeholder;
+        scale: 0.95;
+    }
+    input {
+        all: unset;
+        width: 20vw ;
+        padding: 10px 16px;
+        padding-left: 3rem;
+        font-size: 14px;
+        font-weight: 300;
+        &::placeholder {
+            color:$placeholder;
+            // color: #000000;
+            // opacity: 0.5;
+        }
+    }
+}
+

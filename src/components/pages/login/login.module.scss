@@ -1,0 +1,38 @@
+@import '../../../styles/var.scss';
+
+.login {
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
+    background-position: center;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoginCard {
+    max-width: 420px;
+    width: 420px;
+    padding: 30px;
+    flex-direction: column;
+    display: flex;
+    background-color: $light;
+}
+.loginTitle {
+    color: $main;
+    font-size: 1.7rem;
+    font-weight: 600;
+    span {
+        font-weight: 300;
+    }
+}
+
+.form {
+    margin-bottom: 2rem;
+}
+
+.subButton {
+    margin-top: 1rem;
+    flex-direction: column;
+    display: flex;
+}

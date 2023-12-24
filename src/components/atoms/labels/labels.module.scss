@@ -1,0 +1,18 @@
+@import '../../../styles/var.scss';
+
+.label {
+    font-size: 15px;
+    color: $main;
+    font-weight: 300;
+}
+
+.ar {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.pageTitle {
+    font-size: 1.2rem;
+    color: $main;
+    margin-bottom: 0;
+    font-weight: 600;
+}
